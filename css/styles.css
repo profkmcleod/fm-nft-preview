@@ -1,0 +1,147 @@
+/* Google Font Import */
+/* - Outfit: 300, 400, 600 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Variables: In lieu of repeating color codes, variables can be used. Read more here: https://www.w3schools.com/css/css3_variables.asp */
+
+/* Colors */
+
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --very-dark-blue: hsl(217, 54%, 11%); /* main background */
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Body Styles */
+
+body {
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--very-dark-blue);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+/* Main styles */
+
+main {
+    width: 350px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h2 {
+    color: var(--white);
+    padding: .5rem 0;
+}
+
+.body-copy {
+    color: var(--soft-blue);
+    line-height: 2rem;
+    padding: .5rem 0;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--soft-blue);
+    padding: 5% 0;
+}
+
+.details-container div {
+    flex-basis: 50%;
+}
+
+svg {
+    padding-right: 2%;
+}
+
+.left-detail {
+    color:var(--cyan);
+    font-weight: 600;
+}
+
+.right-detail {
+    text-align: right;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid var(--line-color);
+    color:var(--soft-blue);
+    padding-top: 7%;
+    
+}
+
+.author img {
+    width: 10%;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.author p {
+    padding-left: 5%;
+}
+
+.author a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer {
+    padding: 3% 0;
+    color: var(--soft-blue);
+    font-size: .75rem;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+
+
+/* Resources 
+
+- CSS Variables: https://www.w3schools.com/css/css3_variables.asp
+- Google Font - Outfit: https://fonts.google.com/specimen/Outfit 
+- A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+
+
+*/
+
