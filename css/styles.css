@@ -44,26 +44,60 @@ body {
 /* Main styles */
 
 main {
-    width: 350px;
+    max-width: 350px;
     background-color: var(--card-bg);
     border-radius: 15px;
-    padding: 2%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .image-container {
     width: 100%;
+    position: relative;
 }
 
 .image-container img {
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 }
 
-h2 {
+/* Overlay is styled and hidden. */
+.image-container .overlay {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 255, 247,.5);
+    display: none;
+    cursor: pointer;
+  } 
+
+/* When the user hovers over the image, the SVG within the div is centered and 
+  the div displays */
+.image-container img:hover~div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a {
     color: var(--white);
-    padding: .5rem 0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cyan);
+    transition: .3s;
+}
+
+h2{
+    padding: 5% 0;
 }
 
 .body-copy {
@@ -115,11 +149,6 @@ svg {
 
 .author p {
     padding-left: 5%;
-}
-
-.author a {
-    color: var(--white);
-    text-decoration: none;
 }
 
 footer {
